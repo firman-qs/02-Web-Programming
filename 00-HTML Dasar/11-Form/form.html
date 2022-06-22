@@ -8,28 +8,58 @@
 </head>
 <body>
     <h3>Login Form</h3>
-    <form action="">
+
+<form action="">
+    <table border="0" cellpadding="1">
         <!-- input.username -->
-        <label for="username">Username : </label>
-        <input type="text" id="username">
-            <br>
+        <tr>
+            <td><label for="username">Username :</label></td>
+            <td><input type="text" id="username"></td>
+        </tr>
         <!-- input.password -->
-        <label for="password">Password : </label>
-        <input type="password" id="password">
-            <br>
+        <tr>
+            <td><label for="password">Password :</label></td>
+            <td><input type="password" id="password"></td>
+        </tr>
         <!-- input.radio -->
-        <input type="radio" id="pria" name="jeniskelamin">
-        <label for="pria">Pria</label>
-        <input type="radio" id="wanita" name="jeniskelamin">
-        <label for="wanita">Wanita</label>
-            <br>
+        <tr>
+            <td colspan="2">
+                <input type="radio" id="pria" name="jeniskelamin">
+                <label for="pria">Pria</label>
+                <input type="radio" id="wanita" name="jeniskelamin">
+                <label for="wanita">Wanita</label>
+            </td>
+        </tr>
         <!-- input.checkbox -->
-        <input type="checkbox" id="Bulutangkis""><label for="Bulutangkis">Bulutangkis</label>
-        <input type="checkbox" id="Sepakbola""><label for="Sepakbola">Sepakbola</label>
-        <input type="checkbox" id="Coding""><label for="Coding">Coding</label>
-            <br>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" id="Bulutangkis""><label for="Bulutangkis">Bulutangkis</label>
+                <input type="checkbox" id="Sepakbola""><label for="Sepakbola">Sepakbola</label>
+            </td>
+        </tr>
+        <!-- textarea -->
+        <tr>
+            <td><label for="textarea">Textarea :</label></td>
+            <td><textarea name="" id="textarea" cols="30" rows="10"></textarea></td>
+        </tr>
+        <!-- combo box -->
+        <tr>
+            <td><label for="kota">Kota Kelahiran :</label></td>
+            <td>
+                <select id="kota">
+                    <option>Probolinggo</option>
+                    <option>Surabaya</option>
+                    <option>Pasuruan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="reset">Reset!</button></td>
+        </tr>
+    </table>
+</form>
         <!-- input.submit -->
-        <input type="submit" value="Kirim gan !">
-    </form>
-</Wanitaody>
+        <!-- <input type="submit" value="Kirim gan !"> -->
+        <!-- buttn.submit,reset,button -->
+</body>
 </html>
