@@ -1,0 +1,27 @@
+.hello:link {
+    color: Blue;
+}
+
+.hello:hover {
+    color: red;
+    font-size: 20px;
+}
+
+.hello:active {
+    color: yellow;
+}
+
+.hello:visited {
+    color: black;
+}
+
+/* first-child, last-child */
+/* nth-child(odd/even) */
+li:nth-child(2n) a {
+    color: black;
+}
+
+/* first of type */
+p:last-of-type {
+    color: red;
+}

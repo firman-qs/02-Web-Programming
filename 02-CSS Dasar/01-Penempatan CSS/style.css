@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(243, 238, 238);
+}
+
+h1  {
+    color: red;
+    font-family: Fira Code;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
