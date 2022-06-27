@@ -1,0 +1,51 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(234, 245, 245);
+    font-size: 24px;
+}
+
+div {
+    /* from top to left clockwise */
+    margin: 20px auto 50px;
+}
+
+
+.satu {
+    background-color: rgb(207, 207, 8);
+    width: 200px;
+    height: 200px;
+    /* margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 100px; */
+    
+    /* overlapping on horizontal */
+    /* margin-right: 30px;  */
+
+    /* negative margin */
+    /* margin-bottom: 50px; */
+
+    /* margin auto (kiri kanan)*/
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+
+    /* margin: top right bottom left */
+}
+
+.dua {
+    background-color: rgb(159, 33, 190);
+    width: 100px;
+    height: 100px;
+    /* margin-top: 100px; */
+
+    /* margin-left: 50px; */
+
+    /* margin-top: -50px; */
+
+}
+
+.tiga {
+    background-color: rgb(228, 28, 78);
+    width: 50px;
+    height: 50px;
+}

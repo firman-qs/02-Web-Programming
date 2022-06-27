@@ -1,0 +1,23 @@
+img {
+    width: 300px;
+}
+
+.navigasi a {
+    background-color: rgb(212, 165, 173);
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+}
+
+.main   {
+    background-color: lightgreen;
+    width: 600px;
+}
+
+.main h2 {
+    background-color: gray;
+}
+
+.main span {
+    color: blue;
+}
