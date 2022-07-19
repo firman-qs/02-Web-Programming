@@ -1,0 +1,175 @@
+<!-- Source: https://codepen.io/nana8/pen/MGVWVL -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+
+    <style>
+        @font-face {
+            font-family: "Roboto Bold";
+            src: url("https://fonts.googleapis.com/css?family=Roboto");
+        }
+
+        div {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .title {
+            color: black;
+        }
+
+        .o-main {
+            align-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: 100vw;
+            justify-content: center;
+        }
+
+        .box-outer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: darksalmon;
+            height: 100px;
+            width: 100px;
+            margin: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .default {
+            /* offset-x | offset-y | color */
+            box-shadow: 0px 0px darkred;
+        }
+
+        .default2 {
+            /* offset-x | offset-y | color */
+            box-shadow: 5px 20px darkred;
+        }
+
+        .blur1 {
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 0px 0px 20px darkred;
+        }
+
+        .blur2 {
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 5px 10px 20px darkred;
+        }
+
+        .blur3 {
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 5px 10px 40px darkred;
+        }
+
+        .spread1 {
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 0px 0px 0px 20px darkred;
+        }
+
+        .spread2 {
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 5px 10px 0px 20px darkred;
+        }
+
+        .spread3 {
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 5px 10px 0px 40px darkred;
+        }
+
+        .inset1 {
+            /* inset | offset-x | offset-y | color */
+            box-shadow: inset 5px 10px darkred;
+        }
+
+        .inset2 {
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: inset 0 0 0 5px darkred;
+        }
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        .blur-spread1 {
+            box-shadow: 0px 0px 20px 20px darkred;
+        }
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        .blur-spread2 {
+            box-shadow: 5px 10px 20px 20px darkred;
+        }
+
+        /*..., ..., ...;  */
+        .multiple {
+            box-shadow: inset 0 0 0 10px darkred, 0px 0px 0px 10px LightSeaGreen, 20px 20px 0px 10px darkblue;
+        }
+
+        .oneSide {
+            box-shadow: 0px 8px 6px -6px darkred;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <class="o-main">
+        <div>
+            <h1 class="title">Box-shadow</h1>
+        </div>
+        <div class="box-outer">
+            <div class="box default1">default1</div>
+            <div class="box default2">default2</div>
+        </div>
+        <div class="box-outer">
+            <div class="box blur1">blur1</div>
+            <div class="box blur2">blur2</div>
+            <div class="box blur3">blur3</div>
+
+        </div>
+        <div class="box-outer">
+            <div class="box spread1">spread1</div>
+            <div class="box spread2">spread2</div>
+            <div class="box spread3">spread3</div>
+
+        </div>
+        <div class="box-outer">
+            <div class="box blur-spread1">blur+spread 1</div>
+            <div class="box blur-spread2">blur+spread 2</div>
+        </div>
+        <div class="box-outer">
+            <div class="box inset1">inset1</div>
+            <div class="box inset2">inset2</div>
+        </div>
+        <div class="box-outer">
+            <div class="box multiple">multiple shadow</div>
+        </div>
+        <div class="box-outer">
+            <div class="box oneSide">one side shadow</div>
+        </div>
+        <div>
+            <a class="title" target="_blank"
+                href="https://medium.com/@nana8/css-box-shadow-what-is-difference-between-blur-and-spread-c3a3de92a126">👀
+                Read More / box-shadow 👀 </a>
+        </div>
+        </div>
+
+
+
+</body>
+
+</html>
