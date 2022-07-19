@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 1</title>
+    <style>
+
+        body {
+            background-color: rgb(26, 24, 24);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 1px solid rgb(177, 177, 177);
+            width: 900px;
+        }
+
+        .kotak {
+            width: 100px;
+            height: 100px;
+            /* transition: <porperti> <duration> <fungsi> <delay> */
+            /* 
+            fungsi ==>
+                - ease (default)
+                - ease-in
+                - ease-out
+                - ease-in-out
+                - linear
+                - cubic-bezier\(w,x,y,z)
+            */
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding-top: 20px;
+            margin: 5px;
+        }
+        
+        .satu {
+            transition: margin-left 2s ease, transform 4s ease 2s;
+            background-color: salmon; 
+        }
+        .dua {
+            transition: all 4s ease-in;
+            background-color: salmon;
+        }
+        .tiga {
+            /* with delay */
+            transition: all 4s ease-out 2s;
+            background-color: salmon;
+        }
+        .empat {
+            transition: all 4s ease-in-out;
+            background-color: salmon;
+        }
+        .lima {
+            transition: all 4s cubic-bezier(0.73, -0.29, 0.17, 0.49);
+            background-color: salmon;
+        }
+
+        .container:hover .kotak {
+            transform: rotate(720deg);
+            margin-left: 800px;
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="kotak satu">ease</div>
+        <div class="kotak dua">ease-in</div>
+        <div class="kotak tiga">ease-out</div>
+        <div class="kotak empat">ease-in-out</div>
+        <div class="kotak lima">cubic-bezier</div>
+    </div>
+
+</body>
+</html>

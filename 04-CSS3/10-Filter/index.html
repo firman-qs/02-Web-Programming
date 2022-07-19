@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(29, 29, 31);
+        }
+
+        div {
+            float: left;
+            margin: 20px;
+        }
+
+        img {
+            width: 280px;
+        }
+
+        h3 {
+            margin-bottom: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 20px;
+            line-height: .2px;
+            color: rgb(119, 109, 76);
+        }
+
+        .blur {
+            filter: blur(10px);
+        }
+
+        .brightness {
+            filter: brightness(200%);
+        }
+
+        .contrast {
+            filter: contrast(200%);
+        }
+
+        .saturate {
+            filter: saturate(500%);
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .sepia {
+            filter: sepia(200%);
+        }
+
+        .hue-rotate {
+            filter: hue-rotate(160deg);
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        .opacity {
+            filter: opacity(40%);
+        }
+
+        .drop-shadow {
+            filter: drop-shadow(5px 5px 10px red);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- filter
+    1. blur (px)
+    2. brightness (angka/%)
+    3. contrast (angka/%)
+    4. satureate (angka/%)
+    5. grayscale (angka/%)
+    6. sepia (angka/%)
+    7. hue-rotate (deg)
+    8. invert (angka/%)
+    9. opacity (angka/%)
+    10.drop-shadow (sama seperti box-shadow)
+    -->
+
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" >
+    <h3>Normal</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="blur">
+    <h3>Blur</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="brightness">
+    <h3>brightness</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="contrast">
+    <h3>contrast</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="saturate">
+    <h3>satureate</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="grayscale">
+    <h3>grayscale</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="sepia">
+    <h3>sepia</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="hue-rotate">
+    <h3>hue-rotate</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="invert">
+    <h3>invert</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="opacity">
+    <h3>opacity</h3>
+    </div>
+    <div>
+        <img src="wallhaven-mdk839.jpg" alt="" class="drop-shadow">
+    <h3>drop-shadow</h3>
+    </div>
+
+</body>
+</html>
