@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+
+        .satu {
+            background-color: salmon;
+        }
+        
+        .dua {
+            background-color: lightgreen;
+            top: 75px;
+            left: 75px;
+            z-index: 2;
+        }
+        
+        .tiga {
+            background-color: royalblue;
+            top: 150px;
+            left: 150px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+
+
+</body>
+</html>
