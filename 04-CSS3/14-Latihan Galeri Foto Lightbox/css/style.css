@@ -1,0 +1,179 @@
+/* font */
+@font-face {
+    font-family: "bebasNeue";
+    src: url(../font/BebasNeue-Regular.woff) format('woff');
+}
+
+/* Style Utama */
+body {
+    font: 24px/36px bebasNeue, Arial;
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 50px 0px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+
+a .thumbs {
+    width: 180px;
+}
+
+.container {
+    width: 1030px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+
+/* gallery */
+.gallery li, .gallery li a .thumbs, .gallery li span {
+    border-radius: 50%;
+}
+
+
+.gallery li {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border: 5px solid #666;
+    float: left;
+    margin-right: 16px;
+    position: relative;
+}
+
+.gallery li .thumbs {
+    transition: .2s .1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.gallery li span {
+    background-color: rgba(39, 37, 37, 0.61);
+    color: rgba(255, 255, 255, 0.959);
+    display: block;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    line-height: 180px;
+    position: absolute;
+    top: 0;
+    opacity: .0;
+    transform: scale(1) rotate(0deg);
+    transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 999;
+    transition: .2s;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.overlay .full {
+    max-height: 80%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.404);
+}
+
+.overlay:target .full {
+    animation: .2s zoomFade;
+}
+
+.overlay:target .close {
+    animation: 1s .2s fade forwards;
+}
+
+.overlay:target {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.603);
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.overlay .close {
+    position: absolute;
+    top: 550px;
+    left: 1070px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 4px 7px;
+    font-size: 18px;
+    line-height: 20px;
+    opacity: 0;
+}
+
+
+.overlay .navigation {
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.overlay .navigation img {
+    width: 30px;
+    margin: 0px 6px;
+}
+
+
+/* animasi */
+@keyframes zoomFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* pseudo class */
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.gallery li a:hover .thumbs {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
