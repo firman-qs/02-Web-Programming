@@ -9,6 +9,7 @@ function faktorial(x) {
 console.log(faktorial(3));
 
 
+
 // angka 10 9 8 7 ... 2 1
 function turun(x) {
     if (x>0) {
