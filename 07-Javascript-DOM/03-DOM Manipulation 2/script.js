@@ -11,9 +11,6 @@ newP.appendChild(newText);
 const sectionA = document.getElementById('a')
 sectionA.appendChild(newP)
 
-
-
-
 // list item baru "item 1,5", antara item 1 dan item 2
 // Node.insertBefore()
 const liBaru = document.createElement('li')

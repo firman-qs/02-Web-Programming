@@ -20,8 +20,6 @@ document.addEventListener('keydown', (event) => {
     }
 }) // tambahkan item baru ketika ctrl + alt
 
-
-
 /* daftar Event dalam DOM 
 https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
 */

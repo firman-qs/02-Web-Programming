@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    line-height: 0;
+}
+
+/* Main */
+
+body {
+    text-align: center;
+    background-color: #ddd;
+}
+
+.container {
+    width: 600px;
+    overflow: auto;
+    padding: 5px;
+    margin: 10px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.jumbo {
+    width: 600px;
+    margin-bottom: 5px;
+}
+
+.thumbnail {
+    margin: auto;
+}
+
+.thumb {
+    width: 200px;
+    float: left;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.thumb:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.active {
+    opacity: .5;
+}
+
+.animasiFade {
+    opacity: 0;
+    animation: fade .5s forwards;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
