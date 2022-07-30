@@ -63,10 +63,11 @@ class Mahasiswa {
         this.nama = nama;
         this.tinggi = tinggi;
         this.energi = energi;
-    }
+    } 
 
     tidur = function (durasi) {
         this.energi += durasi;
+        
     }
 }
 
