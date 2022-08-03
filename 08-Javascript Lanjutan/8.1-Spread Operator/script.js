@@ -2,7 +2,6 @@
 // memecah iterable menjadi single element
 // direpresentasikan dengan karakter "..."
 
-
 // console.log(...mhs) // pecah2 mhs
 // console.log(...mhs[0]) // pecah2 mhs[0]
 // console.log([...mhs]) // array [pecah, pecah, mhs]
