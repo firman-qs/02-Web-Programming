@@ -19,4 +19,7 @@
 // console.log(mhs)
 // console.log(mhsCopy)
 
-// 
+// Membuat tiap huruf teks beranimasi
+const nama = document.querySelector('.nama');
+const huruf = [...nama.textContent].map(h => `<span>${(h == ' ') ? `&nbsp`:h}</span>`).join('');
+nama.innerHTML = huruf;

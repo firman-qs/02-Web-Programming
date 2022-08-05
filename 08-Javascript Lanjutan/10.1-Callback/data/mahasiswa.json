@@ -1,0 +1,22 @@
+[
+    {
+        "nama": "Storm Spirit",
+        "attribute": "intellegence",
+        "ultimate": "Lighting Ball"
+    },
+    {
+        "nama": "Earth Spirit",
+        "attribute": "Strength",
+        "ultimate": "Magnetize"
+    },
+    {
+        "nama": "Ember Spirit",
+        "attribute": "Agility",
+        "ultimate": "Fire Remnant"
+    },
+    {
+        "nama": "Void Spirit",
+        "attribute": "intellegence",
+        "ultimate": "Astral Step"
+    }
+]
