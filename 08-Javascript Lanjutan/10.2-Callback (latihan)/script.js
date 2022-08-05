@@ -3,9 +3,8 @@ $('.row .col form button').on('click', function () {
     // $('.movie-container').html(''); //jquery selector
 
     $.ajax({
-        // url: `http://www.omdbapi.com/?apikey=dca61bcc&s=${$('.input-keyword').val()}`,
+        url: `http://www.omdbapi.com/?apikey=dca61bcc&s=${$('.input-keyword').val()}`,
         // url: `database/${$('.input-keyword').val()}.json`, //jika batas pakai API habis (untuk tes)
-        url: `database/avengers.json`, //jika batas pakai API habis (untuk tes)
         success: result => {
             const movies = result.Search;
             let cards = ''
@@ -14,8 +13,8 @@ $('.row .col form button').on('click', function () {
                 $('.movie-container').html(cards);
                 $('.modal-detail-button').on('click', function () {
                     $.ajax({
-                        // url: `http://www.omdbapi.com/?apikey=dca61bcc&i=${$(this).data('imdbid')}`,
-                        url: `database/avengers2.json`, //jika batas pakai API habis (untuk tes)
+                        url: `http://www.omdbapi.com/?apikey=dca61bcc&i=${$(this).data('imdbid')}`,
+                        // url: `database/avengers2.json`, //jika batas pakai API habis (untuk tes)
                         success: result => {
                             $('.modal-title').html(result.Genre)
                             $('.modal-body .title').html(`<h4>${result.Title}</h4>`)
