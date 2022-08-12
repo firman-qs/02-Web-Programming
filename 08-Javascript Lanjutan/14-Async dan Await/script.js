@@ -5,10 +5,10 @@ Sebuah function yang bekerja secara asynchronous (melalui event loop), yang meng
 // contoh
 function cobaPromise() {
     return new Promise((resolve, reject) => {
-        const waktu = 3000;
+        const waktu = 5000;
         if (waktu < 5000) {
             setTimeout(() => {
-                resolve('Selesai')
+                resolve('Promis Dijalankan')
             }, waktu);
         } else {
             reject('Kelamaan');
@@ -16,8 +16,18 @@ function cobaPromise() {
     });
 }
 
-const coba = cobaPromise();
-coba
-    .then(() => console.log(coba))
-    .catch(() => console.log(coba))
+async function getPromise() {
+    try {
+        const coba = await cobaPromise();
+        console.log(coba);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+console.log('====== Mulai ======')
+getPromise()
+console.log('====== Selesai ======')
+
+
 
